@@ -12,7 +12,8 @@ import VideoBg from '../src/assets/video.mp4';
 import './styles.css';
 
 const App = () => {
-  return <section className='page'>
+  return(
+  <section className='page'>
     {/* overlay */}
     <div className='overlay'></div>
     {/* video */}
@@ -20,9 +21,12 @@ const App = () => {
     {/* content */}
     <div className="page__content">
       <h1>Launching Soon</h1>
-      <h3></h3>
+      <h3>Leave your email and we'll let know once the site goes live.</h3>
+      {/* clock */}
+      <FlipClockCountdown to={new Date().getTime() + 24 * 3600 * 1000 + 5000} className='flip-clock' />;
     </div>
-  </section>;
+  </section>
+  );
 };
 
 export default App;
