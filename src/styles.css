@@ -71,4 +71,38 @@ body{
     margin-bottom: 3rem;
 }
 
+.btn{
+    width: 180px;
+    height: 64px;
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0.4rem;
+    font-weight: 700;
+    cursor: pinter;
+}
+
+.btn:hover{
+    background: black;
+    color: white;
+}
+
 /* screens bigger than 900px */
+@media (min-width: 900px){
+    .page h1 {
+        font-size: 4rem;
+    }
+    .page h3 {
+        max-width: 600px;
+    }
+    .flip-clock {
+        --fcc-digit-block-width: 80px; /* width of digit card */
+        --fcc-digit-block-height: 120px; /* height of digit card, highly recommend in even number */
+        --fcc-digit-font-size: 60px; /* font size of digit */
+        --fcc-digit-color: #000; /* color of digit */
+        --fcc-label-font-size: 20px; /* font size of label */
+    }
+}
